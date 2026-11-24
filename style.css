@@ -58,7 +58,7 @@ header {
 .logo {
   font-size: 32px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .logo span {
@@ -147,7 +147,7 @@ box-shadow: 20px -10px 12px 20px;
 .eyebrow {
   color: var(--sage);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing:5px;
   font-size: 12px;
   font-weight: 700;
 }
@@ -162,8 +162,8 @@ box-shadow: 20px -10px 12px 20px;
 }
 
 .section-heading h2 {
-  font-size: 38px;
-  margin: 8px 0;
+font-size: 38px;
+margin: 8px 0;
 }
 
 .products-grid {
