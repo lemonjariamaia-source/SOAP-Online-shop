@@ -42,6 +42,20 @@
       <option value="Sweet">Sweet</option>
     </select>
   </div>
+  <input id="search" type="search" placeholder="Search soaps">
+
+<select id="category">
+  <option value="All">All Collections</option>
+  <option value="Natural">Natural</option>
+  <option value="Floral">Floral</option>
+  <option value="Fresh">Fresh</option>
+  <option value="Special">Special</option>
+  <option value="Sweet">Sweet</option>
+</select>
+
+<div id="products-grid" class="products-grid"></div>
+
+<script src="./script.js"></script>
 
   <p style="margin-bottom:20px">Discover all 18 handcrafted soaps.</p>
   <div id="products-grid" class="products-grid"></div>
@@ -107,14 +121,28 @@
   <div class="modal-content">
     <button class="close" onclick="closeLogin()">×</button>
     <h2>Welcome Back</h2>
-    <form id="login-form">
-      <input type="email" id="login-email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button class="btn">Login</button>
-    </form>
+   
+<form id="subscription-form">
+  <label for="email">
+    Email <span style="color:red">*</span>
+  </label>
+
+  <input
+    type="email"
+    id="email"
+    placeholder="Enter your email address"
+    required
+  >
+
+  <button type="submit" class="btn">
+    Subscribe
+  </button>
+</form>
+
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
+
