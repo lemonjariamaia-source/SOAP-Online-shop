@@ -33,10 +33,10 @@ function photo(index) {
   return `https://images.unsplash.com/${pictures[index % pictures.length]}?auto=format&fit=crop&w=600&q=80`;
 }
 
-let cart = JSON.parse(localStorage.getItem("pureglow-cart") || "[]");
+let cart = JSON.parse(localStorage.getItem("Let's  Glow-cart") || "[]");
 
 function saveCart() {
-  localStorage.setItem("pureglow-cart", JSON.stringify(cart));
+  localStorage.setItem("Let's  Glow-cart", JSON.stringify(cart));
   updateCartCount();
 }
 
