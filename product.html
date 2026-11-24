@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Details | Let's Glow</title>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
 <body>
 
@@ -48,29 +50,24 @@
   <p>Subscribe for new collections and special offers.</p>
   <br>
   
-<form id="login-form">
-  <label for="login-email">
+
+<form id="subscription-form">
+  <label for="email">
     Email <span style="color:red">*</span>
   </label>
+
   <input
     type="email"
-    id="login-email"
-    placeholder="Enter your email"
+    id="email"
+    placeholder="Enter your email address"
     required
   >
 
-  <label for="login-password">
-    Password <span style="color:red">*</span>
-  </label>
-  <input
-    type="password"
-    id="login-password"
-    placeholder="Enter your password"
-    required
-  >
-
-  <button type="submit" class="btn">Login</button>
+  <button type="submit" class="btn">
+    Subscribe
+  </button>
 </form>
+
 
 </section>
 
@@ -118,131 +115,7 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<div id="product-detail"></div>
+<div id="related-products" class="products-grid"></div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const id = Number(
-    new URLSearchParams(location.search).get("id")
-  );
-
-  const product = products[id];
-  const detail = document.getElementById("product-detail");
-
-  if (!Number.isInteger(id) || !product) {
-    detail.innerHTML = `
-      <h2>Product not found</h2>
-      <a href="shop.html" class="btn">Back to Shop</a>
-    `;
-    return;
-  }
-
-  detail.innerHTML = `
-    <div class="story fade-in">
-
-      <div>
-        <img
-          src="${photo(id)}"
-          alt="${product[0]}"
-          style="width:100%;height:480px;object-fit:cover"
-        >
-      </div>
-
-      <div>
-        <span class="eyebrow">
-          LET'S GLOW NATURAL COLLECTION
-        </span>
-
-        <h1 style="font-size:45px;margin:15px 0">
-          ${product[0]}
-        </h1>
-
-        <p>★★★★★ <span style="color:#777">Customer favourite</span></p>
-
-        <h2 style="font-size:30px;margin:20px 0">
-          $${product[1].toFixed(2)}
-        </h2>
-
-        <p>${product[3]}.</p>
-
-        <br>
-
-        <p>
-          A beautiful handmade soap designed to make
-          your everyday skincare routine feel special.
-          Carefully selected ingredients and a lovely
-          botanical-inspired fragrance.
-        </p>
-
-        <br>
-
-        <p><strong>Collection:</strong> ${product[2]}</p>
-        <p><strong>Product:</strong> Handmade soap</p>
-        <p><strong>Size:</strong> 100g (sample listing)</p>
-
-        <br>
-
-        <label for="quantity">Quantity</label>
-        <br>
-        <input
-          type="number"
-          id="quantity"
-          min="1"
-          max="20"
-          value="1"
-          style="width:90px"
-        >
-
-        <br><br>
-
-        <button class="btn" onclick="addSelectedProduct(${id})">
-          Add to Shopping Bag
-        </button>
-
-        <br><br>
-
-        <p>🌿 Thoughtful ingredients</p>
-        <p>✋ Handmade-inspired collection</p>
-        <p>♻ Mindful packaging</p>
-      </div>
-
-    </div>
-  `;
-
-  const related = document.getElementById("related-products");
-
-  related.innerHTML = products
-    .map((item, index) => ({item, index}))
-    .filter(entry => entry.index !== id)
-    .slice(0, 4)
-    .map(({item, index}) => `
-      <article class="product-card">
-        <a href="product.html?id=${index}">
-          <img src="${photo(index)}" alt="${item[0]}">
-        </a>
-        <div class="product-info">
-          <p>${item[2]}</p>
-          <h3>${item[0]}</h3>
-          <div class="price">$${item[1].toFixed(2)}</div>
-          <a href="product.html?id=${index}" class="btn">
-            View Product
-          </a>
-        </div>
-      </article>
-    `).join("");
-});
-
-function addSelectedProduct(id) {
-  const quantity = Math.max(
-    1,
-    Math.min(20, Number(document.getElementById("quantity").value) || 1)
-  );
-
-  for (let i = 0; i < quantity; i++) {
-    addToCart(id);
-  }
-}
-</script>
-
-</body>
-</html>
+<script src="./script.js"></script>
