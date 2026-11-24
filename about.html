@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | PureGlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Pure<span>Glow.</span></a>
+ 
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="product.html?id=0">Products</a>
+  <a href="about.html">Our Story</a>
+  <a href="dashboard.html">Dashboard</a>
+</nav>
+  
+  <div class="nav-actions">
+    <button class="btn btn-light" onclick="openLogin()">Login</button>
+    <button class="btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <span class="eyebrow">OUR PHILOSOPHY</span>
+      <h1>A little closer to nature.</h1>
+      <p>We believe that everyday skincare should be simple, thoughtful, and beautiful.</p>
+      <a class="btn" href="shop.html">Discover Our Soaps</a>
+    </div>
+    <img class="hero-image"
+      src="the-1922-blend-bar-soap-los-poblanos-farm-shop-7573092.webp"
+      alt="Natural skincare products">
+  </section>
+
+  <section class="section">
+    <div class="story">
+      <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=800&q=85" alt="Handmade soap collection">
+      <div>
+        <span class="eyebrow">THE PUREGLOW STORY</span>
+        <h2>Beauty in the simple things.</h2>
+        <p>PureGlow was created around a simple idea: transform an everyday routine into a small moment of self-care.</p>
+        <br>
+        <p>Our collection celebrates botanical scents, thoughtful ingredients, and the charm of handmade soap.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#eeeadf">
+    <div class="section-heading">
+      <span class="eyebrow">WHAT WE BELIEVE</span>
+      <h2>Our Values</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <h2>🌱</h2>
+        <h3>Nature First</h3>
+        <p>We celebrate plant-inspired ingredients.</p>
+      </div>
+      <div class="feature">
+        <h2>♡</h2>
+        <h3>Made With Care</h3>
+        <p>Every detail deserves attention.</p>
+      </div>
+      <div class="feature">
+        <h2>♻</h2>
+        <h3>Mindful Choices</h3>
+        <p>We value thoughtful packaging and less waste.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Make room for a little self-care.</h2>
+    <p>Join the PureGlow community.</p>
+    <br>
+    
+<form id="login-form">
+  <label for="login-email">
+    Email <span style="color:red">*</span>
+  </label>
+  <input
+    type="email"
+    id="login-email"
+    placeholder="Enter your email"
+    required
+  >
+
+  <label for="login-password">
+    Password <span style="color:red">*</span>
+  </label>
+  <input
+    type="password"
+    id="login-password"
+    placeholder="Enter your password"
+    required
+  >
+
+  <button type="submit" class="btn">Login</button>
+</form>
+
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="index.html">Pure<span>Glow.</span></a>
+  <a href="shop.html">Shop</a>
+  <p>© 2026 PureGlow by MAIKO.</p>
+</footer>
+
+<div class="cart-panel" id="cart-panel">
+  <button class="close" onclick="closeCart()">×</button>
+  <h2>Your Shopping Bag</h2>
+  <div id="cart-items"></div>
+  <h3>Total: <span id="cart-total">$0.00</span></h3>
+  <br>
+  <button class="btn" onclick="checkout()">Checkout</button>
+</div>
+
+<div class="modal" id="login-modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeLogin()">×</button>
+    <h2>Welcome Back</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button class="btn">Login</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

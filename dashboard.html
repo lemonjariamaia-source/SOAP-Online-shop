@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Dashboard | PureGlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html">Pure<span>Glow.</span></a>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="product.html?id=0">Products</a>
+  <a href="about.html">Our Story</a>
+  <a href="dashboard.html">Dashboard</a>
+</nav>
+  <div class="nav-actions">
+    <button class="btn btn-light" onclick="openLogin()">Login</button>
+    <button class="btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
+  </div>
+</header>
+
+<main class="section">
+  <span class="eyebrow">STORE MANAGEMENT</span>
+  <h1>Sales Overview</h1>
+  <p>Your PureGlow store at a glance.</p>
+
+  <div class="stats">
+    <div class="stat-card">
+      <p>Total Revenue</p>
+      <h2>$8,450</h2>
+      <small>+12.5% this month</small>
+    </div>
+    <div class="stat-card">
+      <p>Total Orders</p>
+      <h2>342</h2>
+      <small>+8.2% this month</small>
+    </div>
+    <div class="stat-card">
+      <p>Products Sold</p>
+      <h2>618</h2>
+      <small>+15.4% this month</small>
+    </div>
+  </div>
+
+  <section>
+    <h2>Monthly Sales</h2>
+    <p>Sample revenue statistics in USD</p>
+    <br>
+
+    <div class="chart">
+      <div class="chart-column">
+        <div class="bar" style="height:35%"></div>
+        <small>Jan</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:48%"></div>
+        <small>Feb</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:40%"></div>
+        <small>Mar</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:60%"></div>
+        <small>Apr</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:53%"></div>
+        <small>May</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:75%"></div>
+        <small>Jun</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:90%"></div>
+        <small>Jul</small>
+      </div>
+      <div class="chart-column">
+        <div class="bar" style="height:100%"></div>
+        <small>Aug</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-left:0;padding-right:0">
+    <h2>Store Information</h2>
+    <br>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>18 Products</h3>
+        <p>Active soap products</p>
+      </div>
+      <div class="feature">
+        <h3>5 Categories</h3>
+        <p>Natural, Floral, Fresh, Special and Sweet</p>
+      </div>
+      <div class="feature">
+        <h3>Newsletter</h3>
+        <p>Subscription interface active</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="index.html">Pure<span>Glow.</span></a>
+  <a href="shop.html">Shop</a>
+  <p>© 2026 PureGlow by MAIKO.</p>
+</footer>
+
+<div class="cart-panel" id="cart-panel">
+  <button class="close" onclick="closeCart()">×</button>
+  <h2>Your Shopping Bag</h2>
+  <div id="cart-items"></div>
+  <h3>Total: <span id="cart-total">$0.00</span></h3>
+  <br>
+  <button class="btn" onclick="checkout()">Checkout</button>
+</div>
+
+<div class="modal" id="login-modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeLogin()">×</button>
+    <h2>Welcome Back</h2>
+
+<form id="login-form">
+  <label for="login-email">
+    Email <span style="color:red">*</span>
+  </label>
+  <input
+    type="email"
+    id="login-email"
+    placeholder="Enter your email"
+    required
+  >
+
+  <label for="login-password">
+    Password <span style="color:red">*</span>
+  </label>
+  <input
+    type="password"
+    id="login-password"
+    placeholder="Enter your password"
+    required
+  >
+
+  <button type="submit" class="btn">Login</button>
+</form>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
