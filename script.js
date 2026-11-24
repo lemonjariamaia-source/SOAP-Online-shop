@@ -197,12 +197,7 @@ function renderProducts(items = products) {
             $${item[1].toFixed(2)}
           </div>
 
-          <a class="btn"
-            href="product.html?id=${index}">
-            View Product
-          </a>
-
-          <button class="btn"
+                <button class="btn"
             onclick="addToCart(${index})">
             Add to Cart
           </button>
