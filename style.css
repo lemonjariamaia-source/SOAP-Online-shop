@@ -60,7 +60,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px 7%;
-  background: var(--white);
+  background: var(--muted);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
