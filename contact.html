@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Let's Glow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <a class="logo" href="index.html">Let's <span>Glow.</span></a>
+
+  <button class="menu-toggle" id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false">
+    ☰
+  </button>
+
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<main class="section">
+
+  <div class="section-heading">
+    <span class="eyebrow">GET IN TOUCH</span>
+    <h1>We'd Love to Hear From You</h1>
+    <p>Have a question about our handmade soaps? Send us a message.</p>
+  </div>
+
+  <form class="contact-form" action="#" method="get">
+
+    <label for="contact-name">Your Name <span style="color:red">*</span></label>
+    <input type="text" id="contact-name"
+      name="name" placeholder="Enter your name" required>
+
+    <label for="contact-email">Your Email <span style="color:red">*</span></label>
+    <input type="email" id="contact-email"
+      name="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message <span style="color:red">*</span></label>
+    <textarea id="message" name="message"
+      placeholder="Write your message here..."
+      rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+  </form>
+
+</main>
+
+<footer>
+  <div>
+    <a class="logo" href="index.html">Let's <span>Glow.</span></a>
+    <p>Beautifully natural. Simply handmade.</p>
+  </div>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <p>© 2026 Let's Glow by MAIKO. All rights reserved.</p>
+</footer>
+
+<script src="./menu.js"></script>
+
+</body>
+</html>
