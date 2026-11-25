@@ -6,13 +6,14 @@
 =================================== */
 
 :root {
-  --cream: #ede9e4;
-  --beige: #1c1301;
-  --sage: #ef5923;
-  --dark: #3E4C38;
-  --muted: #623706;
-  --white: #c3d1df;
-  --border: #014319;
+  
+ --cream: #F5EDE1;   /* Warm cream */
+--beige: #D6BD9C;   /* Whole wheat */
+--sage: #D98970;    /* Roasted peach */
+--dark: #49382D;    /* Espresso brown */
+--muted: #A58A70;   /* Milky coffee */
+--white: #FFFCF6;   /* Soft ivory */
+--border: #A3B5A0;  /* Eucalyptus */
 }
 
 /* ===================================
@@ -287,6 +288,7 @@ select {
 .story img {
   width: 100%;
   border-radius: 5px;
+  
 }
 
 /* ===================================
