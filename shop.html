@@ -1,148 +1,200 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop | Let's  Glow</title>
+  <title>Shop | Let's Glow</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+
 <header>
-  <a class="logo" href="index.html">Let's<span>Glow.</span></a>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="shop.html">Shop</a>
-  <a href="product.html?id=0">Products</a>
-  <a href="about.html">Our Story</a>
-  <a href="dashboard.html">Dashboard</a>
-</nav>
-  <div class="nav-actions">
-    <button class="btn btn-light" onclick="openLogin()">Login</button>
-    <button class="btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
-  </div>
+  <a class="logo" href="index.html">Let's <span>Glow.</span></a>
+
+  <button class="menu-toggle" id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false">
+    ☰
+  </button>
+
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">Our Story</a>
+     <a href="contact.html">Contact</a>
+    
+  </nav>
 </header>
 
 <main class="section">
+
   <div class="section-heading">
-    <span class="eyebrow">THE Let's  Glow COLLECTION</span>
+    <span class="eyebrow">THE LET'S GLOW COLLECTION</span>
     <h1>Find Your Natural Ritual</h1>
     <p>Explore our collection of handcrafted botanical soaps.</p>
   </div>
 
-  <div class="product-tools">
-    <input id="search" type="search" placeholder="Search soaps...">
-    <select id="category">
-      <option value="All">All Collections</option>
-      <option value="Natural">Natural</option>
-      <option value="Floral">Floral</option>
-      <option value="Fresh">Fresh</option>
-      <option value="Special">Special</option>
-      <option value="Sweet">Sweet</option>
-    </select>
+  <p style="margin-bottom:20px">
+    Discover our 9 handcrafted soaps.
+  </p>
+
+  <div class="products-grid">
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80"
+        alt="Olive Garden Soap">
+      <div class="product-info">
+        <p>Natural</p>
+        <h3>Olive Garden Soap</h3>
+        <p>Olive oil and herbs</p>
+        <div class="price">$8.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=600&q=80"
+        alt="Lavender Dreams Soap">
+      <div class="product-info">
+        <p>Floral</p>
+        <h3>Lavender Dreams</h3>
+        <p>Relaxing lavender</p>
+        <div class="price">$9.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"
+        alt="Honey Oat Soap">
+      <div class="product-info">
+        <p>Natural</p>
+        <h3>Honey Oat Bar</h3>
+        <p>Honey and oatmeal</p>
+        <div class="price">$7.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"
+        alt="Rose Petal Soap">
+      <div class="product-info">
+        <p>Floral</p>
+        <h3>Rose Petal Soap</h3>
+        <p>Rose and shea butter</p>
+        <div class="price">$10.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80"
+        alt="Charcoal Detox Soap">
+      <div class="product-info">
+        <p>Special</p>
+        <h3>Charcoal Detox</h3>
+        <p>Activated charcoal</p>
+        <div class="price">$9.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=600&q=80"
+        alt="Coconut Milk Soap">
+      <div class="product-info">
+        <p>Natural</p>
+        <h3>Coconut Milk Bar</h3>
+        <p>Creamy coconut</p>
+        <div class="price">$8.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80"
+        alt="Mint Fresh Soap">
+      <div class="product-info">
+        <p>Fresh</p>
+        <h3>Mint Fresh Soap</h3>
+        <p>Peppermint and mint</p>
+        <div class="price">$7.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=600&q=80"
+        alt="Vanilla Cloud Soap">
+      <div class="product-info">
+        <p>Sweet</p>
+        <h3>Vanilla Cloud</h3>
+        <p>Warm vanilla scent</p>
+        <div class="price">$9.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"
+        alt="Lemon Zest Soap">
+      <div class="product-info">
+        <p>Fresh</p>
+        <h3>Lemon Zest</h3>
+        <p>Fresh lemon oils</p>
+        <div class="price">$7.00</div>
+        <a href="product.html" class="btn">View Product</a>
+      </div>
+    </article>
+
   </div>
-  <input id="search" type="search" placeholder="Search soaps">
-
-<select id="category">
-  <option value="All">All Collections</option>
-  <option value="Natural">Natural</option>
-  <option value="Floral">Floral</option>
-  <option value="Fresh">Fresh</option>
-  <option value="Special">Special</option>
-  <option value="Sweet">Sweet</option>
-</select>
-
-<div id="products-grid" class="products-grid"></div>
-
-<script src="./script.js"></script>
-
-  <p style="margin-bottom:20px">Discover all 18 handcrafted soaps.</p>
-  <div id="products-grid" class="products-grid"></div>
 </main>
 
 <section class="newsletter">
+  <span class="eyebrow">JOIN OUR COMMUNITY</span>
   <h2>Love natural skincare?</h2>
   <p>Subscribe to hear about our newest soaps.</p>
-  <br>
- 
-<form id="login-form">
-  <label for="login-email">
-    Email <span style="color:red">*</span>
-  </label>
-  <input
-    type="email"
-    id="login-email"
-    placeholder="Enter your email"
-    required
-  >
 
-  <label for="login-password">
-    Password <span style="color:red">*</span>
-  </label>
-  <input
-    type="password"
-    id="login-password"
-    placeholder="Enter your password"
-    required
-  >
+  <form action="#" method="get">
+    <label for="email">
+      Email <span style="color:red">*</span>
+    </label>
 
-  <button type="submit" class="btn">Login</button>
-</form>
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter your email address"
+      required
+    >
 
+    <button type="submit" class="btn">
+      Subscribe
+    </button>
+  </form>
 </section>
 
 <footer>
   <div>
-    <a class="logo" href="index.html">Let's <span> Glow </span></a>
+    <a class="logo" href="index.html">Let's <span>Glow.</span></a>
     <p>Beautifully natural. Simply handmade.</p>
   </div>
+
   <div>
     <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
     <a href="about.html">About</a>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="product.html?id=0">
-  <img src="your-image.jpg" alt="Olive Garden Soap">
-</a>
+    <a href="contact.html">Contact</a>
   </div>
+
   <p>© 2026 Let's Glow by MAIKO. All rights reserved.</p>
 </footer>
 
-<div class="cart-panel" id="cart-panel">
-  <button class="close" onclick="closeCart()">×</button>
-  <h2>Your Shopping Bag</h2>
-  <div id="cart-items"></div>
-  <h3>Total: <span id="cart-total">$0.00</span></h3>
-  <br>
-  <button class="btn" onclick="checkout()">Checkout</button>
-</div>
-
-<div class="modal" id="login-modal">
-  <div class="modal-content">
-    <button class="close" onclick="closeLogin()">×</button>
-    <h2>Welcome Back</h2>
-   
-<form id="subscription-form">
-  <label for="email">
-    Email <span style="color:red">*</span>
-  </label>
-
-  <input
-    type="email"
-    id="email"
-    placeholder="Enter your email address"
-    required
-  >
-
-  <button type="submit" class="btn">
-    Subscribe
-  </button>
-</form>
-
-  </div>
-</div>
-
-<script src="./script.js"></script>
+<script src="./menu.js"></script>
 </body>
 </html>
-
