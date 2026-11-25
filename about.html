@@ -21,10 +21,7 @@
   <a href="contact.html">Contact</a>
 </nav>
   
-  <div class="nav-actions">
-    <button class="btn btn-light" onclick="openLogin()">Login</button>
-    <button class="btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
-  </div>
+  
 </header>
 
 <main>
@@ -108,28 +105,6 @@
   <a href="shop.html">Shop</a>
    <p>© 2026 Let's Glow by MAIKO. All rights reserved.</p>
 </footer>
-
-<div class="cart-panel" id="cart-panel">
-  <button class="close" onclick="closeCart()">×</button>
-  <h2>Your Shopping Bag</h2>
-  <div id="cart-items"></div>
-  <h3>Total: <span id="cart-total">$0.00</span></h3>
-  <br>
-  <button class="btn" onclick="checkout()">Checkout</button>
-</div>
-
-<div class="modal" id="login-modal">
-  <div class="modal-content">
-    <button class="close" onclick="closeLogin()">×</button>
-    <h2>Welcome Back</h2>
-    <form id="login-form">
-      <input type="email" id="login-email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button class="btn">Login</button>
-    </form>
-  </div>
-</div>
-
 
 </body>
 </html>
