@@ -4,25 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Let's Glow | Natural Handmade Soap</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="logo" href="index.html">Let's <span>Glow </span></a>
-  <nav>
-  <a href="index.html">Home</a>
-  <a href="shop.html">Shop</a>
-  <a href="product.html?id=0">Products</a>
-  <a href="about.html">Our Story</a>
-  <a href="dashboard.html">Dashboard</a>
-</nav>
 
-  <div class="nav-actions">
-    <button class="btn btn-light" onclick="openLogin()">Login</button>
-    <button class="btn" onclick="openCart()">Bag (<span id="cart-count">0</span>)</button>
-  </div>
+<header>
+  <a class="logo" href="index.html">Let's <span>Glow.</span></a>
+
+  <button class="menu-toggle" id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false">
+    ☰
+  </button>
+
+  <nav id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <main>
@@ -38,17 +42,64 @@
       alt="Natural handmade soap">
       </section>
 
-  <section class="section">
-    <div class="section-heading">
-      <span class="eyebrow">MADE WITH LOVE</span>
-      <h2>Our Best Sellers</h2>
-      <p>Small rituals. Naturally beautiful results.</p>
-    </div>
-    <div id="products-grid" class="products-grid"></div>
-    <div style="text-align:center;margin-top:35px">
-      <a class="btn" href="shop.html">View All Products</a>
-    </div>
-  </section>
+ 
+<section class="section">
+
+  <div class="section-heading">
+    <span class="eyebrow">MADE WITH LOVE</span>
+    <h2>Our Best Sellers</h2>
+    <p>Small rituals. Naturally beautiful results.</p>
+  </div>
+
+  <div class="products-grid">
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80"
+        alt="Olive Garden Soap">
+
+      <div class="product-info">
+        <p>Natural</p>
+        <h3>Olive Garden Soap</h3>
+        <p>Olive oil and herbs</p>
+        <div class="price">$8.00</div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=600&q=80"
+        alt="Lavender Dreams Soap">
+
+      <div class="product-info">
+        <p>Floral</p>
+        <h3>Lavender Dreams</h3>
+        <p>Relaxing lavender</p>
+        <div class="price">$9.00</div>
+      </div>
+    </article>
+
+    <article class="product-card">
+      <img
+        src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80"
+        alt="Honey Oat Soap">
+
+      <div class="product-info">
+        <p>Natural</p>
+        <h3>Honey Oat Bar</h3>
+        <p>Honey and oatmeal</p>
+        <div class="price">$7.00</div>
+      </div>
+    </article>
+
+  </div>
+
+  <div style="text-align:center; margin-top:35px">
+    <a class="btn" href="shop.html">View All Products</a>
+  </div>
+
+</section>
+
 
   <section class="section">
     <div class="feature-grid">
@@ -70,32 +121,50 @@
     </div>
   </section>
 
-  <section class="newsletter">
-    <span class="eyebrow">JOIN OUR COMMUNITY</span>
-    <h2>Little notes of natural beauty.</h2>
-    <p>Subscribe for new collections and special offers.</p>
-    <br>
   
 
-<form id="subscription-form">
-  <label for="email">
-    Email <span style="color:red">*</span>
-  </label>
+<section class="newsletter">
 
-  <input
-    type="email"
-    id="email"
-    placeholder="Enter your email address"
-    required
-  >
+  <span class="eyebrow">JOIN OUR COMMUNITY</span>
 
-  <button type="submit" class="btn">
-    Subscribe
-  </button>
-</form>
+  <h2>Little notes of natural beauty.</h2>
 
+  <p>Subscribe for new collections and special offers.</p>
 
-  </section>
+  <form action="#" method="get">
+
+    <label for="name">
+      Your Name <span style="color:red">*</span>
+    </label>
+
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Enter your name"
+      required
+    >
+
+    <label for="email">
+      Email <span style="color:red">*</span>
+    </label>
+
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email address"
+      required
+    >
+
+    <button type="submit" class="btn">
+      Subscribe
+    </button>
+
+  </form>
+
+</section>
+
 </main>
 
 <footer>
@@ -111,28 +180,9 @@
  <p>© 2026 Let's Glow by MAIKO. All rights reserved.</p>
 </footer>
 
-<div class="cart-panel" id="cart-panel">
-  <button class="close" onclick="closeCart()">×</button>
-  <h2>Your Shopping Bag</h2>
-  <div id="cart-items"></div>
-  <h3>Total: <span id="cart-total">$0.00</span></h3>
-  <br>
-  <button class="btn" onclick="checkout()">Checkout</button>
-</div>
 
-<div class="modal" id="login-modal">
-  <div class="modal-content">
-    <button class="close" onclick="closeLogin()">×</button>
-    <h2>Welcome Back</h2>
-    <p>Sign in to your Let's Glow account.</p>
-    <form id="login-form">
-      <input type="email" id="login-email" placeholder="Email address" required>
-      <input type="password" placeholder="Password" required>
-      <button class="btn" style="width:100%">Login</button>
-    </form>
-  </div>
-</div>
 
-<script src="script.js"></script>
+
+<script src="./menu.js"></script>
 </body>
 </html>
