@@ -25,6 +25,7 @@
     <a href="shop.html">Shop</a>
     <a href="product.html">Products</a>
     <a href="about.html">Our Story</a>
+    <a href="dashboard.html">Dashboard</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
@@ -131,37 +132,22 @@
 
   <p>Subscribe for new collections and special offers.</p>
 
-  <form action="#" method="get">
+  <form id="subscription-form">
+  <label for="email">
+    Email <span style="color:red">*</span>
+  </label>
 
-    <label for="name">
-      Your Name <span style="color:red">*</span>
-    </label>
+  <input
+    type="email"
+    id="email"
+    placeholder="Enter your email address"
+    required
+  >
 
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Enter your name"
-      required
-    >
-
-    <label for="email">
-      Email <span style="color:red">*</span>
-    </label>
-
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter your email address"
-      required
-    >
-
-    <button type="submit" class="btn">
-      Subscribe
-    </button>
-
-  </form>
+  <button type="submit" class="btn">
+    Subscribe
+  </button>
+</form>
 
 </section>
 
@@ -169,19 +155,19 @@
 
 <footer>
   <div>
-    <a class="logo" href="index.html">Pure<span>Glow.</span></a>
+    <a class="logo" href="index.html">Let's <span>Glow.</span></a>
     <p>Natural beauty, made with care.</p>
   </div>
   <div>
+   <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">Our Story</a>
     <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html" class="active">Contact</a>
   </div>
  <p>© 2026 Let's Glow by MAIKO. All rights reserved.</p>
 </footer>
-
-
-
 
 <script src="./menu.js"></script>
 </body>
