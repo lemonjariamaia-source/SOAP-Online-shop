@@ -127,7 +127,7 @@ nav a.active { color: var(--gold); }
   color: var(--dark);
 }
 
-/* Burger button (hidden on desktop) */
+
 .menu-toggle {
   display: none;
   background: var(--dark);
@@ -138,7 +138,7 @@ nav a.active { color: var(--gold); }
   border-radius: 5px;
 }
 
-/* hero*/
+
 
 .hero {
   min-height: 590px;
@@ -155,6 +155,9 @@ nav a.active { color: var(--gold); }
   line-height: 1.12;
   margin: 20px 0;
 }
+   
+
+
 
 .hero p {
   max-width: 440px;
@@ -173,7 +176,7 @@ nav a.active { color: var(--gold); }
 
 .hero-image:hover { transform: scale(1.03); }
 
-/* text seqcia */
+
 
 .eyebrow {
   color: var(--gold);
@@ -195,7 +198,7 @@ nav a.active { color: var(--gold); }
   margin: 8px 0;
 }
 
-/* product */
+
 
 .products-grid {
   display: grid;
@@ -253,7 +256,7 @@ select {
   background: var(--white);
 }
 
-/* brendis girebulebebi */
+
 
 .feature-grid {
   display: grid;
@@ -285,7 +288,7 @@ select {
   border-radius: 5px;
 }
 
-/* gamoiwereT gverdi */
+
 .newsletter {
   background: #E6E9DF;
   padding: 55px 20px;
@@ -296,7 +299,7 @@ select {
 .newsletter input { width: min(320px, 65%);
 box-shadow:1px 0px 0.5px 1px #BBB3DB; }
 
-/* footer yvel gverdistvis */
+
 
 
 footer {
@@ -313,7 +316,7 @@ footer p { font-size: 13px;color: var(--cream); }
 footer a { margin-right: 10px; color: var(--cream);}
 
 
-/* statistika */
+
 
 .stats {
   display: grid;
@@ -370,9 +373,7 @@ footer a { margin-right: 10px; color: var(--cream);}
 
 .bar:hover { background: var(--dark); }
 
-/* ===================================
-   ANIMATIONS
-=================================== */
+
 
 @keyframes grow {
   from { height: 0; }
@@ -385,9 +386,7 @@ footer a { margin-right: 10px; color: var(--cream);}
 
 .fade-in { animation: fade .8s ease both; }
 
-/* ===================================
-   RESPONSIVE - TABLET
-=================================== */
+
 
 @media (max-width: 900px) {
   nav { column-gap: 16px; }
@@ -402,13 +401,11 @@ footer a { margin-right: 10px; color: var(--cream);}
   .hero-image { height: 350px; }
 }
 
-/* ===================================
-   RESPONSIVE - PHONE
-=================================== */
+
 
 @media (max-width: 600px) {
 
-  /* Header + burger menu */
+ 
   header {
     position: sticky;
     top: 0;
@@ -430,11 +427,11 @@ footer a { margin-right: 10px; color: var(--cream);}
 
   nav.active { display: flex; }
 
-  /* Spacing */
+
   .hero    { padding: 45px 6%; }
   .section { padding: 50px 6%; }
 
-  /* Grids */
+  
   .products-grid { gap: 12px; }
 
   .feature-grid,
@@ -442,7 +439,6 @@ footer a { margin-right: 10px; color: var(--cream);}
     grid-template-columns: 1fr;
   }
 
-  /* Sizes */
   .hero-image { height: 220px; }
   .section-heading h2 { font-size: 30px; }
   .product-card img { height: 160px; }
@@ -454,3 +450,4 @@ footer a { margin-right: 10px; color: var(--cream);}
     text-align: center;
   }
 }
+{"version":3,"sources":["contactpage.scss","contactpage.css"],"names":[],"mappings":"AAEQ,sHAAA;AAER;EACE,gBAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;ACFF;ADIE;;EAEE,WAAA;EACA,aAAA;EACA,+BAAA;EACA,kBAAA;EACA,wBAAA;ACFJ;ADII;;EACE,aAAA;EACA,yBAAA;EACA,mCAAA;ACDN;ADKE;EACE,iBAAA;EACA,gBAAA;ACHJ;ADME;EACE,sBAAA;ACJJ","file":"contactpage.css"}
