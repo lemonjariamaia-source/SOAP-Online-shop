@@ -91,6 +91,7 @@ nav {
 }
 
 nav a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: var(--cream);
@@ -151,7 +152,7 @@ nav a.active { color: var(--gold); }
 }
 
 .hero h1 {
-  font-size: clamp(36px, 6vw, 72px);
+  font-size: clamp(40px, 5vw, 72px);
   line-height: 1.12;
   margin: 20px 0;
 }
@@ -450,4 +451,3 @@ footer a { margin-right: 10px; color: var(--cream);}
     text-align: center;
   }
 }
-{"version":3,"sources":["contactpage.scss","contactpage.css"],"names":[],"mappings":"AAEQ,sHAAA;AAER;EACE,gBAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;ACFF;ADIE;;EAEE,WAAA;EACA,aAAA;EACA,+BAAA;EACA,kBAAA;EACA,wBAAA;ACFJ;ADII;;EACE,aAAA;EACA,yBAAA;EACA,mCAAA;ACDN;ADKE;EACE,iBAAA;EACA,gBAAA;ACHJ;ADME;EACE,sBAAA;ACJJ","file":"contactpage.css"}
